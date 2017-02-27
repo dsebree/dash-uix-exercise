@@ -25611,6 +25611,7 @@ th.numeric {
 	position: relative;
 	border-radius: 4px;
 	background-color: #f7f7f9;
+	box-shadow: 2px 2px 5px #ccc;
 }
 .activity_title {
 	background-color: #6395c0;
@@ -25672,8 +25673,10 @@ th.numeric {
 		display: none;
 	}
 	.sidebar.open .boxLight {
-		margin: 10px 30px;
+		margin: 20px 20px 10px;
+		padding: 10px 0 20px 0;
 		clear: both;
+		padding: 
 		border-color: #1d4c63;
 		border-width: 0 0 1px;
 	}
@@ -25690,8 +25693,7 @@ th.numeric {
 		height: auto!important;;
 	}
 	.sidebar.open h4 {
-		font-weight: bold;
-		font-size: 18px;
+		font-size: 20px;
 	}
 	.sidebar-menu {
 		background-color: #1d4c63;
@@ -25699,7 +25701,7 @@ th.numeric {
 		margin: 0 0 20px;
 		float: left;
 		width: 100%;
-		padding: 10px;
+		padding: 15px 10px;
 		clear: both;
 	}
 	.sidebar-menu li.divider {
@@ -25712,7 +25714,7 @@ th.numeric {
 		width: 50%;
 	}
 	.sidebar-menu a {
-		margin: 3px;
+		margin: 5px;
 		display: block;
 		padding: 5px 0;
 	}
