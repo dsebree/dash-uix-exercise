@@ -13522,7 +13522,8 @@ if (+ function(a) {
                 b.call(c, c.data())
             })
         })
-    }(jQuery), + function(a) {
+    }
+/*(jQuery), + function(a) {
         "use strict";
 
         function b(b) {
@@ -13589,7 +13590,9 @@ if (+ function(a) {
                 k = j && a(j);
             h && h.transitioning || (k && k.find('[data-toggle="collapse"][data-parent="' + j + '"]').not(e).addClass("collapsed"), e[g.hasClass("in") ? "addClass" : "removeClass"]("collapsed")), b.call(g, i)
         })
-    }(jQuery), + function(a) {
+    }
+*/
+	(jQuery), + function(a) {
         "use strict";
 
         function b(b) {
