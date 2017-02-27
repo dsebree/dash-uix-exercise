@@ -17516,6 +17516,11 @@ fieldset[disabled] .navbar-default .btn-link:hover {
 	padding-top: 7px;
 	padding-bottom: 8px;
 }
+.user_nav {
+	position: absolute;
+	top: 0px;
+	right: 15px;
+}
 @media (max-width:767px) {
 	.navbar-inverse .navbar-brand {
 		float: none;
@@ -17546,12 +17551,12 @@ fieldset[disabled] .navbar-default .btn-link:hover {
         color: #444;
         background-color: transparent
     }
+	.user_nav {
+		top: 0;
+		right: 0;
+	}
 	.nav.user_menu {
 		margin: 0;
-	}
-	.nav.user_menu .dropdown-toggle {
-		padding-top: 10px; 
-		padding-bottom: 10px; 
 	}
 	.nav.user_menu .dropdown {
 		text-align: right;
@@ -25583,7 +25588,6 @@ th.numeric {
 }
 .sidebar .boxLight h4 {
 	margin: 0;
-	color: #21659f;
 }
 .activity_header {
 	width: 100%;
@@ -25668,8 +25672,10 @@ th.numeric {
 		display: none;
 	}
 	.sidebar.open .boxLight {
-		margin: 10px;
+		margin: 10px 30px;
 		clear: both;
+		border-color: #1d4c63;
+		border-width: 0 0 1px;
 	}
 	.sidebar.open {
 		overflow-y: scroll;
@@ -25683,10 +25689,17 @@ th.numeric {
 		z-index: 1000;
 		height: auto!important;;
 	}
+	.sidebar.open h4 {
+		font-weight: bold;
+		font-size: 18px;
+	}
 	.sidebar-menu {
+		background-color: #1d4c63;
 		list-style: none;
-		padding: 0;
-		margin: 10px;
+		margin: 0 0 20px;
+		float: left;
+		width: 100%;
+		padding: 10px;
 		clear: both;
 	}
 	.sidebar-menu li.divider {
@@ -25737,7 +25750,7 @@ th.numeric {
 		position: fixed;
 		max-height: none;
 		background: #444;
-		bottom: -100vh;
+		bottom: calc(-100vh + 50px);
 		padding: 10px;
 		margin: 0;
 		top: 50px;
