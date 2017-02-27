@@ -1285,7 +1285,7 @@ $j(document).ready(function(){
 	});
 
 	//Replacement nav script
-	$j('.user_menu .dropdown-menu').clone().removeClass('dropdown-menu').addClass('sidebar-menu').prependTo('.sidebar').find('a').addClass('btn btn-default btn-sm'); 	//Copy user nav into sidebar
+	$j('.user_menu .dropdown-menu').clone().removeClass('dropdown-menu').addClass('sidebar-menu').prependTo('.sidebar'); 	//Copy user nav into sidebar
 	$j('.user_menu .dropdown-toggle').click(function(e){
 		e.preventDefault();
 		if ($j(window).width() < 767) {

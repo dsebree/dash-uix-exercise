@@ -25673,8 +25673,8 @@ th.numeric {
 		display: none;
 	}
 	.sidebar.open .boxLight {
-		margin: 20px 20px 10px;
-		padding: 10px 0 20px 0;
+		margin: 10px 10px 10px;
+		padding: 10px 5px 10px 5px;
 		clear: both;
 		padding: 
 		border-color: #1d4c63;
@@ -25696,12 +25696,11 @@ th.numeric {
 		font-size: 20px;
 	}
 	.sidebar-menu {
-		background-color: #1d4c63;
 		list-style: none;
-		margin: 0 0 20px;
+		margin: 0;
 		float: left;
 		width: 100%;
-		padding: 15px 10px;
+		padding: 5px 10px;
 		clear: both;
 	}
 	.sidebar-menu li.divider {
@@ -25710,13 +25709,22 @@ th.numeric {
 	.sidebar-menu li {
 		margin: 0;
 		padding: 0;
-		float: left;
-		width: 50%;
+		border-bottom: 1px solid #ccc;
 	}
 	.sidebar-menu a {
 		margin: 5px;
 		display: block;
 		padding: 5px 0;
+		font-size: 16px;
+	}
+	.sidebar-menu a:hover {
+		text-decoration: none;
+	}
+	.open_nav.navbar-collapse li a::before,
+	.sidebar-menu a::before {
+		font-family: Glyphicons Halflings;
+		content: '\e080';
+		padding: 0 10px 0 0;
 	}
 	.inline-xs {
 		display: inline;
@@ -25731,6 +25739,7 @@ th.numeric {
 		display: none;
 	}
 	.sidebar .boxLight h4 {
+		font-size: 16px;
 		padding: 0 30px 0 0;
 	}
 	.activity_details .costs {
